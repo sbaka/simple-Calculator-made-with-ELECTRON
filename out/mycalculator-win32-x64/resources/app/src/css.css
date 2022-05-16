@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+}
+#calculator{
+    background-color: #eaedef;
+    width: 320px;
+    height: 520px;
+}
+.result{
+    height: 120px;
+}
+.keyboard{
+    height: 400px;
+}
+.output,.history{
+    text-align: right;
+}
+.history{
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+.output{
+    height:60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+.operator,.number,.empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+.number, .empty{
+    background-color: #eaedef;
+}
+.number,.operator{
+    cursor: pointer;
+}
+.operator:active, .number:active{
+    font-size: 13px;
+}
+.number:focus,.operator:focus,.empty:focus{
+    outline: 0;
+}
+.operator{
+    font-size: 20px;
+}
+button:nth-child(4){
+    background-color: #f0932b;
+}
+button:nth-child(8){
+    background-color: #eb4d4b;
+}
+button:nth-child(12){
+    background-color: #f6e58d;
+}
+button:nth-child(16){
+    background-color: #22a6b3;
+}
+button:nth-child(20){
+    background-color: #be2edd;
+}
+.operator{
+    background-color: #d7d6d6;
+}
+.number:hover{
+    background-color:#b8b8b8;
+    border-radius: 30%;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: ease-in;
+}
